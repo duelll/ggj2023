@@ -13,8 +13,13 @@ public class TitleScreen : MonoBehaviour
         
     }
 
-    public void Button start()
+    public void StartButton()
     {
         SceneManager.LoadScene(scene);
+    }
+
+    public void QuitButton()
+    {
+        Application.Quit();
     }
 }
