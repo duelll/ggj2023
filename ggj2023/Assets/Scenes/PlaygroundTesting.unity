@@ -566,13 +566,14 @@ GameObject:
   - component: {fileID: 1497819908}
   - component: {fileID: 1497819907}
   - component: {fileID: 1497819906}
+  - component: {fileID: 1497819910}
   m_Layer: 5
   m_Name: TestCanvas
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!114 &1497819906
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -655,6 +656,20 @@ RectTransform:
   m_AnchoredPosition: {x: 5.1, y: 1.2}
   m_SizeDelta: {x: 923.7605, y: 519.61523}
   m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &1497819910
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1497819905}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6b001fd2b0fdbe74d8d64be9c62cab01, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  potatoOld: {fileID: 0}
+  potatoNew: {fileID: 0}
 --- !u!1 &1539692526
 GameObject:
   m_ObjectHideFlags: 0
@@ -666,6 +681,7 @@ GameObject:
   - component: {fileID: 1539692528}
   - component: {fileID: 1539692527}
   - component: {fileID: 1539692529}
+  - component: {fileID: 1539692530}
   m_Layer: 0
   m_Name: planterbox
   m_TagString: planter
@@ -766,6 +782,18 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 1, y: 1}
   m_EdgeRadius: 0
+--- !u!114 &1539692530
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1539692526}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a8b95f19e76a90d4f9a822b3622c1c4b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1756327493
 GameObject:
   m_ObjectHideFlags: 0
