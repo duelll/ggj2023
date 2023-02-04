@@ -25,8 +25,4 @@ public class TopDownMovement : MonoBehaviour
         rb2d.velocity = moveInput * moveSpeed;
     }
 
-    private void OnTriggerEnter2D(Collider2D collision)
-    {
-        Debug.Log("eee");
-    }
 }
