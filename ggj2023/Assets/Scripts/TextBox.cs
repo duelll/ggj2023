@@ -11,12 +11,12 @@ public class TextBox : MonoBehaviour
     {
         text.SetActive(false);
     }
-    void OnTriggerStay2D(Collision2D collider)
+    void OnCollisionStay2D(Collision2D collision)
     {
         text.SetActive(true);
     }
 
-    void OnTriggerExit2D(Collider2D collision)
+    void OnCollisionExit2D(Collision2D collision)
     {
         text.SetActive(false);
     }
