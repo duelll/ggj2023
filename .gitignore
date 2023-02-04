@@ -348,3 +348,13 @@ MigrationBackup/
 
 # Ionide (cross platform F# VS Code tools) working folder
 .ionide/
+
+ggj2023/.vsconfig
+
+*.csproj
+
+ggj2023/ggj2023.sln
+
+ggj2023/Library/
+
+ggj2023/Temp/
