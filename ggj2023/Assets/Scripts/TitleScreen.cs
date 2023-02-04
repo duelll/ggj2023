@@ -21,5 +21,6 @@ public class TitleScreen : MonoBehaviour
     public void QuitButton()
     {
         Application.Quit();
+        Debug.Log("Quit Game");
     }
 }
