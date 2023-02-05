@@ -7,6 +7,7 @@ public class Garden : MonoBehaviour
     public PlanterUI UIData;
     public GameObject oldImage;
     public GameObject newImage;
+    public GameObject text;
 
     private bool growFlag = false;
     private float countdown = 0.0f;
@@ -14,6 +15,7 @@ public class Garden : MonoBehaviour
     void Awake()
     {
         UIData = GameObject.FindAnyObjectByType<PlanterUI>();
+        text.SetActive(false);
     }
 
     private void Update()
@@ -52,5 +54,20 @@ public class Garden : MonoBehaviour
     {
         oldImage.SetActive(false);
         newImage.SetActive(true);
+    }
+
+    void OnTriggerEnter2D(Collider2D collision)
+    {
+        if(growFlag)
+        {
+            text.SetActive(true);
+        }
+        
+        Debug.Log("test");
+    }
+
+    void OnTriggerExit2D(Collider2D collision)
+    {
+        text.SetActive(false);
     }
 }
