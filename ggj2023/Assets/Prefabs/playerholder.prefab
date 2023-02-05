@@ -121,7 +121,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 792034055148187678}
+      - m_Target: {fileID: 0}
         m_TargetAssemblyTypeName: PlanterUI, Assembly-CSharp
         m_MethodName: getSeed
         m_Mode: 3
@@ -656,7 +656,7 @@ GameObject:
   - component: {fileID: 792034055148187676}
   - component: {fileID: 792034055148187675}
   - component: {fileID: 792034055148187674}
-  - component: {fileID: 792034055148187678}
+  - component: {fileID: 3826919848111869525}
   m_Layer: 5
   m_Name: TestCanvas
   m_TagString: Untagged
@@ -747,7 +747,7 @@ MonoBehaviour:
   m_BlockingMask:
     serializedVersion: 2
     m_Bits: 4294967295
---- !u!114 &792034055148187678
+--- !u!114 &3826919848111869525
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -756,12 +756,9 @@ MonoBehaviour:
   m_GameObject: {fileID: 792034055148187673}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 73e2476ccc731ac4baf83580d94b83e8, type: 3}
+  m_Script: {fileID: 11500000, guid: 6b001fd2b0fdbe74d8d64be9c62cab01, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  target: {fileID: 0}
-  offset: {x: 0, y: 0, z: 0}
-  damping: 0
 --- !u!1 &792034055414035805
 GameObject:
   m_ObjectHideFlags: 0
@@ -883,7 +880,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 792034055148187678}
+      - m_Target: {fileID: 0}
         m_TargetAssemblyTypeName: PlanterUI, Assembly-CSharp
         m_MethodName: getSeed
         m_Mode: 3
