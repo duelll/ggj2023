@@ -4,37 +4,53 @@ using UnityEngine;
 
 public class Garden : MonoBehaviour
 {
-    //public struct seed
-    //{
-    //    public string type;
-    //    public float growTime;
-    //    public Sprite;
-    //};
+    public PlanterUI UIData;
+    public GameObject oldImage;
+    public GameObject newImage;
 
-    private void OnTriggerEnter2D(Collider2D collision)
+    private bool growFlag = false;
+    private float countdown = 0.0f;
+
+    void Start()
     {
-        Debug.Log("eee");
+        
+    }
 
-        if (collision.tag == "planter")
+    private void Update()
+    {
+        grow();
+        if(growFlag)
         {
-            Debug.Log("wonk");
-            if (Input.GetKey(KeyCode.E))
+            countdown -= Time.deltaTime;
+            if(countdown <= 0.0)
             {
-                Debug.Log("wonkaa");
+                Debug.Log("Swap");
+                growFlag = !growFlag;
+                updateImage();
             }
         }
     }
 
-    private void OnTriggerStay2D(Collider2D collision)
+    void grow()
     {
-        if(collision.tag == "planter")
+        //Debug.Log("grow func");
+        if(UIData.seedType == 0 && !growFlag)
         {
-            Debug.Log("wonk");
-            if (Input.GetKey(KeyCode.E))
-            {
-                Debug.Log("wonkaa");
-            }
+            Debug.Log("Countdown...");
+            growFlag = !growFlag;
+            countdown = UIData.timer;
+
         }
-        
+
+        if (UIData.seedType < -1)
+        {
+            updateImage();
+        }
+    }
+
+    void updateImage()
+    {
+        oldImage.SetActive(false);
+        newImage.SetActive(true);
     }
 }
