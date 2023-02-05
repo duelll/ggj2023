@@ -11,6 +11,8 @@ public class TopDownMovement : MonoBehaviour
 
     public Rigidbody2D rb2d;
 
+    public Animator animator; 
+
     private Vector2 moveDirection;
     void Awake()
     {
@@ -33,8 +35,14 @@ public class TopDownMovement : MonoBehaviour
     {
         float moveX = Input.GetAxisRaw("Horizontal");
         float moveY = Input.GetAxisRaw("Vertical");
-
+        
         moveDirection = new Vector2(moveX, moveY).normalized;
+        
+        animator.SetFloat("Horizontal", moveX);
+        animator.SetFloat("Vertical", moveY);
+        animator.SetFloat("Speed", moveDirection.sqrMagnitude);
+
+        
     }
 
     void Move()
