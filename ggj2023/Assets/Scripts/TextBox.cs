@@ -4,19 +4,20 @@ using UnityEngine;
 
 public class TextBox : MonoBehaviour
 {
-
     public GameObject text;
-
+   
+   
     void Start()
     {
         text.SetActive(false);
     }
-    void OnCollisionStay2D(Collision2D collision)
+    void OnTriggerEnter2D(Collider2D collision)
     {
         text.SetActive(true);
+        Debug.Log("test");
     }
 
-    void OnCollisionExit2D(Collision2D collision)
+    void OnTriggerExit2D(Collider2D collision)
     {
         text.SetActive(false);
     }
