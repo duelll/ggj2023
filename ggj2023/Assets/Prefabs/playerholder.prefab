@@ -121,7 +121,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
+      - m_Target: {fileID: 3826919848111869525}
         m_TargetAssemblyTypeName: PlanterUI, Assembly-CSharp
         m_MethodName: getSeed
         m_Mode: 3
@@ -133,7 +133,7 @@ MonoBehaviour:
           m_StringArgument: 2
           m_BoolArgument: 0
         m_CallState: 1
-      - m_Target: {fileID: 1126282209}
+      - m_Target: {fileID: 792034055148187673}
         m_TargetAssemblyTypeName: UnityEngine.GameObject, UnityEngine
         m_MethodName: SetActive
         m_Mode: 6
@@ -143,7 +143,7 @@ MonoBehaviour:
           m_IntArgument: 0
           m_FloatArgument: 0
           m_StringArgument: 
-          m_BoolArgument: 1
+          m_BoolArgument: 0
         m_CallState: 2
 --- !u!1 &1965691585
 GameObject:
@@ -157,7 +157,7 @@ GameObject:
   - component: {fileID: 1965691588}
   - component: {fileID: 1965691587}
   m_Layer: 5
-  m_Name: carrot
+  m_Name: tomato
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -271,7 +271,7 @@ GameObject:
   - component: {fileID: 792034054392209727}
   - component: {fileID: 792034054392209726}
   m_Layer: 5
-  m_Name: carrot
+  m_Name: potato
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -387,6 +387,7 @@ GameObject:
   - component: {fileID: 792034054830801159}
   - component: {fileID: 792034054830801209}
   - component: {fileID: 7388966855682808011}
+  - component: {fileID: 1065964085}
   m_Layer: 0
   m_Name: Player
   m_TagString: Player
@@ -497,7 +498,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   moveSpeed: 5.18
   rb2d: {fileID: 0}
-  animator: {fileID: 7388966855682808011}
+  animator: {fileID: 0}
 --- !u!61 &792034054830801209
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -544,6 +545,21 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorStateOnDisable: 0
+--- !u!114 &1065964085
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 792034054830801155}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: eb115dc6d0357e84096dbdcb845b1cea, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  potatoSeed: 0
+  tomatoSeed: 0
+  cabbageSeed: 0
 --- !u!1 &792034054937595604
 GameObject:
   m_ObjectHideFlags: 0
@@ -663,7 +679,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!224 &792034055148187677
 RectTransform:
   m_ObjectHideFlags: 0
@@ -880,7 +896,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
+      - m_Target: {fileID: 3826919848111869525}
         m_TargetAssemblyTypeName: PlanterUI, Assembly-CSharp
         m_MethodName: getSeed
         m_Mode: 3
@@ -892,7 +908,7 @@ MonoBehaviour:
           m_StringArgument: 0
           m_BoolArgument: 0
         m_CallState: 1
-      - m_Target: {fileID: 792034055414035805}
+      - m_Target: {fileID: 792034055148187673}
         m_TargetAssemblyTypeName: UnityEngine.GameObject, UnityEngine
         m_MethodName: SetActive
         m_Mode: 6
@@ -902,7 +918,7 @@ MonoBehaviour:
           m_IntArgument: 0
           m_FloatArgument: 0
           m_StringArgument: 
-          m_BoolArgument: 1
+          m_BoolArgument: 0
         m_CallState: 2
 --- !u!1 &6861544448869124962
 GameObject:

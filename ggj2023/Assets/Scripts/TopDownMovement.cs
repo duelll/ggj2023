@@ -17,6 +17,7 @@ public class TopDownMovement : MonoBehaviour
     void Awake()
     {
         rb2d = this.gameObject.GetComponent<Rigidbody2D>();
+        animator = this.gameObject.GetComponent<Animator>();
     }
 
     // Update is called once per frame
