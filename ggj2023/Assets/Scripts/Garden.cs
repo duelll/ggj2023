@@ -11,9 +11,9 @@ public class Garden : MonoBehaviour
     private bool growFlag = false;
     private float countdown = 0.0f;
 
-    void Start()
+    void Awake()
     {
-        
+        UIData = GameObject.FindAnyObjectByType<PlanterUI>();
     }
 
     private void Update()

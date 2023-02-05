@@ -121,7 +121,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 792034055148187678}
+      - m_Target: {fileID: 0}
         m_TargetAssemblyTypeName: PlanterUI, Assembly-CSharp
         m_MethodName: getSeed
         m_Mode: 3
@@ -495,8 +495,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 746d49a9770e3c74caba873c8d3b6fa4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  moveSpeed: 0
+  moveSpeed: 5.18
   rb2d: {fileID: 0}
+  animator: {fileID: 0}
 --- !u!61 &792034054830801209
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -655,14 +656,14 @@ GameObject:
   - component: {fileID: 792034055148187676}
   - component: {fileID: 792034055148187675}
   - component: {fileID: 792034055148187674}
-  - component: {fileID: 792034055148187678}
+  - component: {fileID: 3826919848111869525}
   m_Layer: 5
   m_Name: TestCanvas
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &792034055148187677
 RectTransform:
   m_ObjectHideFlags: 0
@@ -746,7 +747,7 @@ MonoBehaviour:
   m_BlockingMask:
     serializedVersion: 2
     m_Bits: 4294967295
---- !u!114 &792034055148187678
+--- !u!114 &3826919848111869525
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -755,7 +756,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 792034055148187673}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 524c8bc9b0c6b9748b50b2c84be1478e, type: 3}
+  m_Script: {fileID: 11500000, guid: 6b001fd2b0fdbe74d8d64be9c62cab01, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
 --- !u!1 &792034055414035805
@@ -879,7 +880,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 792034055148187678}
+      - m_Target: {fileID: 0}
         m_TargetAssemblyTypeName: PlanterUI, Assembly-CSharp
         m_MethodName: getSeed
         m_Mode: 3
