@@ -31,6 +31,7 @@ public class PlanterUI : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
+        gameObject.SetActive(false);
         //plant product = plant.potato;
         //seed plant;
         //plant.timer = 20f;
