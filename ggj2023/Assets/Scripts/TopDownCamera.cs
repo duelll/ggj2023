@@ -10,6 +10,11 @@ public class TopDownCamera : MonoBehaviour
 
     private Vector3 velocity = Vector3.zero;
 
+    private void Awake()
+    {
+        target = GameObject.FindGameObjectWithTag("Player").transform;
+    }
+
     // Update is called once per frame
     void FixedUpdate()
     {
