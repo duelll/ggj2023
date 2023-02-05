@@ -15,4 +15,16 @@ public class Inventory : MonoBehaviour
         tomatoSeed = 0;
         cabbageSeed = 0;
     }
+
+    public void addPotato()
+    {
+        potatoSeed++;
+        Debug.Log("added potato. You have: " + potatoSeed.ToString());
+    }
+
+    public void removePotato()
+    {
+        potatoSeed--;
+        Debug.Log("removed potato. You have: " + potatoSeed.ToString());
+    }
 }

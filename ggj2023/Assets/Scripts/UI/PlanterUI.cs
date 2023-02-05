@@ -70,4 +70,9 @@ public class PlanterUI : MonoBehaviour
 
         Debug.Log("seed is " + seedType.ToString());
     }
+
+    public void resetSeed()
+    {
+        seedType = -1;
+    }
 }
