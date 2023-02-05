@@ -404,7 +404,8 @@ Transform:
   m_LocalPosition: {x: -3.1987784, y: -3.901784, z: -237.4118}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
-  m_Children: []
+  m_Children:
+  - {fileID: 792034055148187677}
   m_Father: {fileID: 6803630543039269186}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -490,10 +491,10 @@ MonoBehaviour:
   m_GameObject: {fileID: 792034054830801155}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: f91d45d1b9a990b499800dbaae48fde9, type: 3}
+  m_Script: {fileID: 11500000, guid: 746d49a9770e3c74caba873c8d3b6fa4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  moveSpeed: 5.24
+  moveSpeed: 0
   rb2d: {fileID: 0}
 --- !u!61 &792034054830801209
 BoxCollider2D:
@@ -615,12 +616,12 @@ MonoBehaviour:
   m_GameObject: {fileID: 792034054937595604}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 6495cb0fa5f3afb4ca01de8b170e8b76, type: 3}
+  m_Script: {fileID: 11500000, guid: 73e2476ccc731ac4baf83580d94b83e8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   target: {fileID: 792034054830801157}
   offset: {x: 0, y: 0, z: -10}
-  damping: 0.2
+  damping: 0
 --- !u!1 &792034055148187673
 GameObject:
   m_ObjectHideFlags: 0
